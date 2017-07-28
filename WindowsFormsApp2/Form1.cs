@@ -597,8 +597,8 @@ namespace FareComparison
                 f1.airline = ca.Substring(17, 2).ToUpper();
                 compflights.Add(f1);
             }
-            Compsession1 = new Air.TE.Connection(Air.TE.Application.Type.TourEastB2B, WebService.Type.SabreCommand).GetByPcc(MasterPCC.Text);
-            Compsession2 = new Air.TE.Connection(Air.TE.Application.Type.TourEastB2B, WebService.Type.SabreCommand).GetByPcc(MasterPCC.Text);
+            Compsession1 = new Air.TE.Connection(/*Tour East Sabre API*/, WebService.Type.SabreCommand).GetByPcc(MasterPCC.Text);
+            Compsession2 = new Air.TE.Connection(/*Tour East Sabre API*/, WebService.Type.SabreCommand).GetByPcc(MasterPCC.Text);
             int i = 1;
             foreach (var f in compflights)
             {
